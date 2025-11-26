@@ -7,7 +7,7 @@ function Home() {
   
         <h1 style={{color: 'pink', textAlign: 'center'}}>FLORENTINA</h1>
   
-        <p style={style}> Este é um exemplo de página inicial.</p>
+        <p style={style}> Pagina inicial da Florentina.</p>
   
       </div>
   
