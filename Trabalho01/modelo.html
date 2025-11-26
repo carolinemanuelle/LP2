@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Inscrições</h1>
+    <hr>
+    <a href="http://127.0.0.1:5500/Trabalho01/intro.html">Inicial</a>
+    <a href="http://127.0.0.1:5500/Trabalho01/contratos.html?indice=&cnpj=14253UA&modelo=J%C3%BAlia+Freitas&valor=1234">Contratos</a>
+    <a href="http://127.0.0.1:5500/Trabalho01/eventos.html">Eventos</a>
+    <h3>Nesta tela, você poderá inserir seus dados para se tornar parte da Florentina.</h3>
+    <h4>Informe seus dados:</h4>
+    <form id="form_cliente">
+        <input type="hidden" id="indice" name="indice"><br>
+        <label for="nome">Nome</label><br>
+        <input type="text" id="nome" name="" name> <br>
+        <label for="idade">Idade</label><br>
+        <input type="number" id="idade" name="idade"><br>
+        <label for="altura">Altura</label><br>
+        <input type="number" id="altura" name="altura"><br>
+        <label for="olhos">Olhos</label><br>
+        <input type="text" id="olhos" name="olhos"><br>
+        <button>Salvar</button>
+    </form>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Altura</th>
+                <th>Olhos</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="corpo_tabela">
+
+        </tbody>
+    </table>  
+    <p>Observação: a altura precisa estar em centímetros!</p>
+</body>
+<script src="manipula_modelo.js"></script>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tela de Eventos</h1>
+    <hr>
+    <a href="http://127.0.0.1:5500/Trabalho01/intro.html">Inicial</a>
+    <a href="http://127.0.0.1:5500/Trabalho01/contratos.html?indice=&cnpj=14253UA&modelo=J%C3%BAlia+Freitas&valor=1234">Contratos</a>
+    <a href="http://127.0.0.1:5500/Trabalho01/modelo.html?indice=&idade=&altura=&olhos=">Inscrição</a>
+    <h3>Digite as informações dos eventos que deseja organizar com os modelos da Florentina abaixo:</h3>
+    <form id="form_eventos">
+        <input type="hidden" id="indice" name="indice"><br>
+        <label for="cliente">Cliente</label><br>
+        <input type="text" id="cliente" name="" name> <br>
+        <label for="Lugar">Lugar</label><br>
+        <input type="text" id="lugar" name="lugar"><br>
+        <label for="modelo">Modelo</label><br>
+        <input type="text" id="modelo" name="modelo"><br>
+        <label for="horario">Horário</label><br>
+        <input type="datetime" id="horario" name="horario"><br>
+        <button>Salvar</button>
+    </form>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Cliente</th>
+                <th>Lugar</th>
+                <th>Modelo</th>
+                <th>Horário</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="corpo_tabela">
+
+        </tbody>
+    </table>  
+</body>
+<script src="manipula_eventos.js"></script>
+</html>

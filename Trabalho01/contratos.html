@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tela de Contatos</h1>
+    <hr>
+    <a href="http://127.0.0.1:5500/Trabalho01/intro.html">Inicial</a>
+    <a href="http://127.0.0.1:5500/Trabalho01/eventos.html">Eventos</a>
+    <a href="http://127.0.0.1:5500/Trabalho01/modelo.html?indice=&idade=&altura=&olhos=">Inscrição</a>
+    <h3>Digite  as informaçãoes dos contratos que deseja realizar com a Florentina abaixo:</h3>
+    <form id="form_contratos">
+        <input type="hidden" id="indice" name="indice"><br>
+        <label for="cliente">Cliente</label><br>
+        <input type="text" id="cliente" name="" name> <br>
+        <label for="cnpj">CNPJ</label><br>
+        <input type="text" id="cnpj" name="cnpj"><br>
+        <label for="modelo">Modelo</label><br>
+        <input type="text" id="modelo" name="modelo"><br>
+        <label for="valor">Valor</label><br>
+        <input type="number" id="valor" name="valor"><br>
+        <button>Salvar</button>
+    </form>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Cliente</th>
+                <th>CNPJ</th>
+                <th>Modelo</th>
+                <th>Valor</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="corpo_tabela">
+
+        </tbody>
+    </table>  
+</body>
+<script src="manipula_contratos.js"></script>
+</html>

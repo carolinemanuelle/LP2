@@ -1,0 +1,16 @@
+{
+  "name": "aula-07-09-node-projeto",
+  "version": "1.0.0",
+  "description": "Teste.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Carol.",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

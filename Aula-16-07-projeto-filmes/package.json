@@ -1,0 +1,20 @@
+{
+  "name": "aula-16-07-projeto-filmes",
+  "version": "1.0.0",
+  "description": "Prática node com Mysql",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Caroline",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mysql2": "^3.14.2",
+    "nodemon": "^3.1.10",
+    "sequelize": "^6.37.7"
+  }
+}

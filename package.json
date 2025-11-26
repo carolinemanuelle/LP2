@@ -1,0 +1,11 @@
+{
+  "name": "lp2",
+  "version": "1.0.0",
+  "main": "manipula_cliente.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Caroline",
+  "license": "ISC",
+  "description": ""
+}
