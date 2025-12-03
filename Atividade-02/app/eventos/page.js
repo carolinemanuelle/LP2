@@ -32,6 +32,7 @@ async function TelaEventos() {
                         <th>Data</th>
                          <th>Status</th>
                         <th>Nome do Evento</th>
+                        <th>Ações</th>
 
 
 

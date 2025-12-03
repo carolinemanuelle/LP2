@@ -6,6 +6,8 @@
     border: 1px solid rgb(194, 185, 243);
     flex-direction: column;
 
+    background-image: url('/Florentina.jpg');
+
     h1{
         font-size: 90px;
     }

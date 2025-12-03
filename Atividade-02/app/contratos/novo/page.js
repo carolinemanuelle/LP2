@@ -1,5 +1,6 @@
 import {Contratos} from '../../../database/tables';
-import {redirect} from 'next/navigation'
+import {redirect} from 'next/navigation';
+import "../../css/cadastro.css";
 async function InsereContratos(formData){
     'use server';
     const dados ={

@@ -33,6 +33,7 @@ async function TelaModelos() {
                         <th>País</th>
                         <th>Altura</th>
                         <th>Massa</th>
+                        <th>Ações</th>
 
 
 

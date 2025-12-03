@@ -1,9 +1,9 @@
 import { Contratos } from "../../database/tables";
 import "../css/listagem.css";
-async function removeContrato(formData){
+async function removeContrato(formData) {
     "use server";
     const id = formData.get("id");
-    const contrato =  await Contrato.findByPk(id);
+    const contrato = await Contrato.findByPk(id);
     await contrato.destroy();
     redirect('/eventos');
 }
@@ -17,8 +17,8 @@ async function TelaContratos() {
         <div>
 
             <h1>Contratos</h1>
-            <a href="/contratos/novo"> + um contrato </a> <br/>
-            <table border="1">
+            <a href="/contratos/novo"> + um contrato </a> <br />
+            <table>
 
 
 
@@ -31,6 +31,7 @@ async function TelaContratos() {
                         <th>Data de Fim</th>
                         <th>Valor</th>
                         <th>Numero do Contrato</th>
+                        <th>Ações</th>
 
 
 
@@ -44,7 +45,7 @@ async function TelaContratos() {
 
                     {
 
-                        contratos.map(function(con) {
+                        contratos.map(function (con) {
 
                             return (
 
@@ -60,8 +61,14 @@ async function TelaContratos() {
 
                                     <td>{con.numcon}</td>
                                     <td>
+
+                                        <form action={'/contratos/edita'}>
+                                            <input type="hidden" name="id" defaultValue={con.id} />
+                                            <button>Editar</button>
+                                        </form>
+
                                         <form action={removeContrato}>
-                                            <input type= "hidden" name="id" defaultValue={con.id}/>
+                                            <input type="hidden" name="id" defaultValue={con.id} />
                                             <button>Excluir</button>
                                         </form>
                                     </td>

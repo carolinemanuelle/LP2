@@ -1,4 +1,22 @@
 table{
     width: 80%;
     margin: auto;
+    border: 0.2px solid rgb(224, 115, 224);
+    margin-top: 5px;
+    }
+    th, td{
+        border: 0.2px solid rgb(224, 115, 224);
+        padding:4px;
+    }
+    td:last-child{
+
+        background-color: rgb(245, 242, 242);
+        display: flex;
+        justify-content: center;
+    }
+    button{
+        margin: 4px;
+        background-color: transparent;
+        color: rgb(53, 45, 45);
+        border-width: 1px ;
     }

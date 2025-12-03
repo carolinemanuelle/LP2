@@ -72,7 +72,8 @@ const Contratos = mysql.define('Contratos', {
 
 const Pagamentos = mysql.define('Pagamentos', {
 
-    valor: DataTypes.INTEGER,
+    
+    valor: DataTypes.STRING,
 
     status: DataTypes.STRING
 
@@ -103,3 +104,4 @@ mysql.sync();
 
 
 export { Modelos, Clientes, Eventos, Funcionarios, Contratos, Pagamentos, mysql };
+

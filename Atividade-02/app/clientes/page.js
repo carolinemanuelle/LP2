@@ -31,6 +31,7 @@ async function TelaClientes() {
                         <th>cnpj</th>
                         <th>Email</th>
                         <th>Telefone</th>
+                        <th>Ações</th>
 
 
 
@@ -60,6 +61,10 @@ async function TelaClientes() {
 
                                     <td>{cli.telefone}</td>
                                     <td>
+                                    <form action={'/clientes/edita'}>
+                                            <input type= "hidden" name="id" defaultValue={cli.id}/>
+                                            <button>Editar</button>
+                                        </form>
                                         <form action={removeCliente}>
                                             <input type= "hidden" name="id" defaultValue={cli.id}/>
                                             <button>Excluir</button>

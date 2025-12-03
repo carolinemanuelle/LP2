@@ -8,19 +8,22 @@ function Menu() {
 
             <div>
                 <h1>Venha conhecer nossa Florentina!</h1>
+                <img src="/Rosa.webp" alt ="LaçoRosa"/>
             </div>
             <div>
                 <ul>
 
                     <a href="/">Home</a>&nbsp;
 
-                    <a href="/modelos">Modelos</a>
+                    <a href="/modelos">Modelos</a>&nbsp;
 
-                    <a href="/clientes">Clientes</a>
+                    <a href="/clientes">Clientes</a>&nbsp;
 
-                    <a href="/contratos">Contratos</a>
+                    <a href="/contratos">Contratos</a>&nbsp;
 
-                    <a href="/eventos">Eventos</a>
+                    <a href="/eventos">Eventos</a>&nbsp;
+
+                    <a href="/pagamentos">Pagamentos</a>&nbsp;
 
                 </ul>
             </div>
