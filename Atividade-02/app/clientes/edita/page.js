@@ -1,6 +1,8 @@
 import { SearchParamsContext } from "next/dist/shared/lib/hooks-client-context.shared-runtime";
 import { Clientes } from "../../../database/tables";
-import { redirect } from 'next/navigation'
+import { redirect } from 'next/navigation';
+import {revalidatePath } from 'next/cache';
+import "../../css/cadastro.css";
 async function editaClientes(formData){
     'use server'
     const id = formData.get('id');
@@ -17,6 +19,7 @@ async function editaClientes(formData){
     cliente.telefone = telefone;
 
     await cliente.save();
+    revalidatePath('/clientes');
 
     redirect('/clientes')
 }

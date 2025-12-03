@@ -1,6 +1,7 @@
 import { SearchParamsContext } from "next/dist/shared/lib/hooks-client-context.shared-runtime";
 import { Eventos } from "../../../database/tables";
-import { redirect } from 'next/navigation'
+import { redirect } from 'next/navigation';
+import {revalidatePath } from 'next/cache';
 async function editaEvento(formData){
     'use server'
     const id = formData.get('id');
@@ -17,6 +18,8 @@ async function editaEvento(formData){
     evento.nome_eve = nome_eve;
 
     await evento.save();
+
+    revalidatePath('/eventos');
 
     redirect('/eventos')
 }

@@ -5,20 +5,20 @@
     font-family:  "Playfair Display", serif;
 }
 header{
-background-color: rgb(236, 210, 236) ;
+background-color: black ;
 height: 10vh;
 }
 main{
-   background-color: rgb(243, 235, 245);
+   background-color: white;
    min-height: 80vh; 
 }
 footer {
-    background-color: rgb(241, 220, 227);
+    background-color: black;
     height: 6vh;
     display: flex;
     justify-content: center;
     align-items: center;
     p{
-        color: rgb(93, 81, 173);
+        color:white;
     }
 }

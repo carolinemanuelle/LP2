@@ -1,6 +1,8 @@
 import { SearchParamsContext } from "next/dist/shared/lib/hooks-client-context.shared-runtime";
 import { Contratos } from "../../../database/tables";
-import { redirect } from 'next/navigation'
+import { redirect } from 'next/navigation';
+import {revalidatePath } from 'next/cache';
+import "../../css/cadastro.css";
 async function editaContrato(formData){
     'use server'
     const id = formData.get('id');
@@ -17,6 +19,7 @@ async function editaContrato(formData){
     contrato.numcon = numcon;
 
     await contrato.save();
+    revalidatePath('/contratos');
 
     redirect('/contratos')
 }

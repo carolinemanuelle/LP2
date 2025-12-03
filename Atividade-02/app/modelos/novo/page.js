@@ -1,5 +1,6 @@
 import {Modelos} from '../../../database/tables';
-import {redirect} from 'next/navigation'
+import {redirect} from 'next/navigation';
+import "../../css/cadastro.css";
 async function InsereModelo(formData){
     'use server';
     const dados ={

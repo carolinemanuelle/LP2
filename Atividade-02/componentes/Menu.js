@@ -6,9 +6,10 @@ function Menu() {
 
         <nav>
 
-            <div>
-                <h1>Venha conhecer nossa Florentina!</h1>
-                <img src="/Rosa.webp" alt ="LaçoRosa"/>
+            <div className="div-img-menu">
+                <img src="/RostoFlorentina.png" alt="Florentina" />
+                <h1 style={{ textAling: 'center', color: 'white' }}>FLORENTINA</h1>
+
             </div>
             <div>
                 <ul>
@@ -24,6 +25,8 @@ function Menu() {
                     <a href="/eventos">Eventos</a>&nbsp;
 
                     <a href="/pagamentos">Pagamentos</a>&nbsp;
+
+                    <a href="/funcionarios">Funcionários</a>&nbsp;
 
                 </ul>
             </div>

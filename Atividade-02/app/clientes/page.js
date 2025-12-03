@@ -1,11 +1,13 @@
 import { Clientes } from "../../database/tables";
 import "../css/listagem.css";
+import {revalidatePath } from 'next/cache';
 async function removeCliente(formData){
     "use server";
     const id = formData.get("id");
-    const cliente =  await Cliente.findByPk(id);
+    const cliente =  await Clientes.findByPk(id);
     await cliente.destroy();
-    redirect('/cliente');
+    revalidatePath('/clientes');
+    redirect('/clientes');
 }
 
 async function TelaClientes() {

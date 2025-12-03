@@ -3,10 +3,10 @@
     justify-content: center;
     align-items: center;
     height: 80vh;
-    border: 1px solid rgb(194, 185, 243);
+    border: 1px solid black;
     flex-direction: column;
 
-    background-image: url('/Florentina.jpg');
+   
 
     h1{
         font-size: 90px;

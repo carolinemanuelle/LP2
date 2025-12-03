@@ -1,10 +1,12 @@
 import { Contratos } from "../../database/tables";
 import "../css/listagem.css";
+import {revalidatePath } from 'next/cache';
 async function removeContrato(formData) {
     "use server";
     const id = formData.get("id");
-    const contrato = await Contrato.findByPk(id);
+    const contrato = await Contratos.findByPk(id);
     await contrato.destroy();
+    revalidatePath('/contratos');
     redirect('/eventos');
 }
 

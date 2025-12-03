@@ -1,11 +1,13 @@
 import { Eventos } from "../../database/tables";
 import {redirect} from 'next/navigation';
 import "../css/listagem.css";
+import {revalidatePath } from 'next/cache';
 async function removeEvento(formData){
     "use server";
     const id = formData.get("id");
     const evento =  await Eventos.findByPk(id);
     await evento.destroy();
+    revalidatePath('/eventos');
     redirect('/eventos');
 }
 

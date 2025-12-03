@@ -1,5 +1,7 @@
 import {Clientes} from '../../../database/tables';
-import {redirect} from 'next/navigation'
+import {redirect} from 'next/navigation';
+import "../../css/cadastro.css";
+import {revalidatePath } from 'next/cache';
 async function InsereCliente(formData){
     'use server';
     const dados ={
@@ -10,6 +12,7 @@ async function InsereCliente(formData){
     }
 
     await Clientes.create(dados);
+    revalidatePath('/clientes');
     redirect ('/clientes')
 }
 function TelaNovoClientes(){

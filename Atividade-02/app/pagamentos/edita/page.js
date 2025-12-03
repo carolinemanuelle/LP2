@@ -1,6 +1,7 @@
 import { SearchParamsContext } from "next/dist/shared/lib/hooks-client-context.shared-runtime";
 import { Pagamentos } from "../../../database/tables";
-import { redirect } from 'next/navigation'
+import { redirect } from 'next/navigation';
+import "../../css/cadastro.css";
 async function editaPagamentos(formData){
     'use server'
     const id = formData.get('id');
@@ -33,7 +34,7 @@ async function TelaEditaPagamentos({searchParams}){
             <input type="text" name="valor" defaultValue={pagamento.valor} />< br/>
     
             <label htmlFor="status" >Status</label> < br/>
-            <input type="text" name="staus" defaultValue={pagamento.status} /> < br/>
+            <input type="text" name="status" defaultValue={pagamento.status} /> < br/>
     
     
             <button>Cadastrar</ button>

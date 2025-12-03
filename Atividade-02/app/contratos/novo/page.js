@@ -1,6 +1,7 @@
 import {Contratos} from '../../../database/tables';
 import {redirect} from 'next/navigation';
 import "../../css/cadastro.css";
+import {revalidatePath } from 'next/cache';
 async function InsereContratos(formData){
     'use server';
     const dados ={
@@ -11,6 +12,7 @@ async function InsereContratos(formData){
     }
 
     await Contratos.create(dados);
+    revalidatePath('/contratos');
     redirect ('/contratos')
 }
 function TelaNovoContratos(){

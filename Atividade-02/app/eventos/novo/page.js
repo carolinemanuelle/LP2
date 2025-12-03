@@ -1,5 +1,7 @@
 import {Eventos} from '../../../database/tables';
-import {redirect} from 'next/navigation'
+import {redirect} from 'next/navigation';
+import "../../css/cadastro.css";
+import {revalidatePath } from 'next/cache';
 async function InsereEventos(formData){
     'use server';
     const dados ={
@@ -10,6 +12,7 @@ async function InsereEventos(formData){
     }
 
     await Eventos.create(dados);
+    revalidatePath('/eventos');
     redirect ('/eventos')
 }
 function TelaNovoEventos(){

@@ -39,9 +39,9 @@ const Funcionarios = mysql.define('Funcionarios', {
 
     descricao: DataTypes.STRING,
 
-    idade: DataTypes.INTEGER,
+    idade: DataTypes.STRING,
 
-    salario: DataTypes.DOUBLE
+    salario: DataTypes.STRING
 
 });
 
@@ -97,6 +97,9 @@ Modelos.belongsToMany(Eventos, { through: 'Modelos_Eventos' });
 
 Eventos.belongsToMany(Clientes, { through: 'Clientes_Eventos' });
 Clientes.belongsToMany(Eventos, { through: 'Clientes_Eventos' });
+
+Eventos.belongsToMany(Funcionarios, { through: 'Funcionarios_Eventos' });
+Funcionarios.belongsToMany(Eventos, { through: 'Funcionarios_Eventos' });
 
 
 mysql.sync();
